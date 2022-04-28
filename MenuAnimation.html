@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+     <meta charset="UTF-8">
+          
+     <title>Menu Button Animation</title>
+     <link rel="stylesheet" href="MenuAnimation.css">
+</head>
+
+<body>
+     <button type="button"  class="Menu1">
+          <span class="Line"></span>
+          <span class="Line"></span>
+          <span class="Line"></span>
+     </button>
+
+     <button type="button"  class="Menu2">
+          <span class="Line"></span>
+          <span class="Line"></span>
+          <span class="Line"></span>
+     </button>
+
+     <button type="button"  class="Menu3">
+          <span class="Line"></span>
+          <span class="Line"></span>
+          <span class="Line"></span>
+     </button>
+     
+</body>
+<script>
+     const Menu1 = document.querySelector('.Menu1')
+     const MenuItemActive1 = () => {
+               Menu1.classList.toggle('active')
+     }
+     Menu1.addEventListener('click', MenuItemActive1)
+
+     
+
+     const Menu2 = document.querySelector('.Menu2')
+     const MenuItemActive2 = () => {
+               Menu2.classList.toggle('active')
+     }
+     Menu2.addEventListener('click', MenuItemActive2)
+
+
+     const Menu3 = document.querySelector('.Menu3')
+     const MenuItemActive3 = () => {
+               Menu3.classList.toggle('active')
+     }
+     Menu3.addEventListener('click', MenuItemActive3)
+</script>
+</html>
